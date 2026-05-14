@@ -234,3 +234,44 @@ These limitations are not failures; they are findings. They define exactly what 
 | `outputs/figures/correlation_heatmap.png` | Full correlation matrix |
 | `docs/methodology_decisions.md` | Formal decisions log |
 | `docs/eda_findings_notes.md` | This document |
+
+---
+
+## 10. Driver ranking — total vs marginal impact
+
+Lavinia requested both total impact (overall importance) and marginal impact (per-unit/per-category effect controlling for other variables). Built via logistic regression with L2 regularisation and class-balanced weights.
+
+### Headline findings
+
+**1. Categorical variables dominate the marginal ranking.** Top 5 by marginal impact: JobRole, BusinessTravel, EducationField, OverTime, MaritalStatus — all categorical. This reflects that moving between distinct categories represents a larger qualitative shift than one-unit numeric changes.
+
+**2. JobRole is the dominant driver in both views (rank 1/1).** Total impact 37.3pp, marginal log-odds 5.22. Acts as a segmentation variable bundling workload, status, and culture. Caveat: partly a proxy for everything else.
+
+**3. OverTime and BusinessTravel hold rank well across views.** OverTime: rank 2/4. BusinessTravel: rank 4/2. These are the cleanest *modifiable* levers — their marginal effect survives controlling for other variables, meaning a client could intervene on them and expect real attrition impact.
+
+**4. EducationField is the surprise: rank 14 → rank 3.** Moderate total impact (12.5pp) but large marginal effect (log-odds 2.19). Suggests career-mobility differences between fields are substantial after controlling for age, role, and salary. Worth deeper investigation.
+
+**5. Income, Age, JobLevel, TotalWorkingYears all collapse in the marginal view.** MonthlyIncome (7→21), Age (8→22), JobLevel (4→25), TotalWorkingYears (3→12). The seniority cluster is so collinear that no single variable retains independent importance — they explain each other.
+
+### Wellbeing-specific findings
+
+Wellbeing variables rank in the middle in both views:
+- JobInvolvement: 13/16
+- JobSatisfaction: 15/14
+- EnvironmentSatisfaction: 16/11
+- WorkLifeBalance: ~22 (not in top 15)
+
+This is consistent with yesterday's finding that IBM's wellbeing variables don't inter-correlate. They show some signal but no single one is dominant. Reinforces the case for building a properly-structured wellbeing latent variable in the synthetic data.
+
+### Commercial implications for Wellmatch
+
+The modifiable levers — OverTime, BusinessTravel, role-specific stressors — are the cleanest commercial story. Confounded variables (income, age, JobLevel) cannot serve as intervention targets even if they show high total impact. The framing becomes: "quantifying per-unit impact of modifiable drivers to prioritise interventions."
+
+### Limitations of the marginal analysis
+
+- Logistic regression assumes linearity in log-odds — non-linear effects underestimated.
+- Class-balanced weights produce indicative coefficients but biased point estimates.
+- Coefficients standardised on numeric variables (1 SD) but categorical effects are aggregated across dummies, so direct comparison between types is approximate.
+- L2 regularisation shrinks all coefficients slightly toward zero.
+
+This is an indicative ranking, not a causal model. The next step is replicating the analysis across ONS / BLS / EWCS to see which drivers hold up across data sources.
