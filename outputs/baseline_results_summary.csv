@@ -1,0 +1,3 @@
+Model,ROC_AUC,Recall_Leavers,Precision_Leavers,F1_Leavers,Accuracy,Notes
+Logistic Regression,0.8226,0.34,0.62,0.44,0.86,Baseline — best performer
+Random Forest,0.7554,0.26,0.48,0.33,0.84,Underperforms on small dataset

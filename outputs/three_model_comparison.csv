@@ -1,0 +1,4 @@
+Model,ROC_AUC,Recall_Leavers,Precision_Leavers,F1_Leavers,Leavers_Caught,False_Alarms,Best_For
+Logistic Regression,0.8226,0.34,0.62,0.44,16/47,10,Overall discrimination
+Random Forest,0.7554,0.26,0.48,0.33,12/47,13,Neither — underperforms
+XGBoost (tuned),0.7786,0.4,0.53,0.46,19/47,17,Maximising recall
