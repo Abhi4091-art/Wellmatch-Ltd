@@ -1,0 +1,10 @@
+JobRole,ISCO2_label,IBM_role_wellbeing,EWCS_occ_wellbeing,attrition_rate,n
+Healthcare Representative,Health associate professionals,2.7385496183206106,64.68225110763616,0.06870229007633588,131
+Laboratory Technician,Science & engineering assoc. professionals,2.7036679536679538,68.61246601932912,0.23938223938223938,259
+Sales Executive,Sales workers,2.733128834355828,69.22288529387328,0.17484662576687116,326
+Sales Representative,Sales workers,2.7409638554216866,69.22288529387328,0.39759036144578314,83
+Human Resources,Business & admin professionals,2.7596153846153846,69.35734416760864,0.23076923076923078,52
+Research Director,Science & engineering professionals,2.6875,69.40693417609566,0.025,80
+Research Scientist,Science & engineering professionals,2.720890410958904,69.40693417609566,0.16095890410958905,292
+Manager,Administrative & commercial managers,2.764705882352941,70.90161555332524,0.049019607843137254,102
+Manufacturing Director,Production & specialised services managers,2.7724137931034485,71.12824653021235,0.06896551724137931,145

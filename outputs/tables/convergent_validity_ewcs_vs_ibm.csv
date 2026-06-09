@@ -1,0 +1,7 @@
+Theme,EWCS measure,EWCS |d|,IBM measure,IBM |corr|
+Wellbeing / affect,wellbeing,0.373,WellbeingIndex,0.159
+Recognition / environment,recognition,0.52,EnvironmentSatisfaction,0.103
+Engagement / enthusiasm,eng_enthusiastic,0.512,JobInvolvement,0.13
+Relational / manager support,support_manager,0.351,RelationshipSatisfaction,0.046
+Work-life balance,work_life_balance,0.285,WorkLifeBalance,0.064
+Job satisfaction,useful_work,0.404,JobSatisfaction,0.103

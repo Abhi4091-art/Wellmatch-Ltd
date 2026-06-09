@@ -1,0 +1,17 @@
+parameter,value,unit,source,data_source
+replacement_multiplier_L1,0.5,x annual salary,SHRM / Oxford Economics 2014,literature
+replacement_multiplier_L2,0.75,x annual salary,SHRM / Oxford Economics 2014,literature
+replacement_multiplier_L3,1.0,x annual salary,SHRM / Oxford Economics 2014,literature
+replacement_multiplier_L4,1.5,x annual salary,SHRM / Oxford Economics 2014,literature
+replacement_multiplier_L5,2.0,x annual salary,SHRM / Oxford Economics 2014,literature
+uk_working_days_per_year,226.0,days,ONS standard working year,ONS
+uk_absence_days_per_worker,4.4,days/year,ONS Sickness Absence 2025 Table 3 — VERIFY FROM NB03,ONS
+uk_mh_share_of_absence,0.08,proportion,ONS Table 4a mental-health reason — VERIFY FROM NB03,ONS
+us_absence_rate_pct,3.2,% of days,BLS CPS 2024 (NB04),BLS
+us_working_days_per_year,240.0,days,NB04,BLS
+wellbeing_roi_ratio,4.7,£ per £1,Deloitte 2024 UK Mental Health,literature
+proactive_roi_ratio,4.2,£ per £1,Deloitte 2024 (preventative),literature
+uk_employer_mh_cost_total,51000000000.0,£/year,Deloitte 2024 (£51bn),literature
+uk_mh_absence_cost,7300000000.0,£/year,Deloitte 2024,literature
+uk_mh_turnover_cost,19500000000.0,£/year,Deloitte 2024,literature
+pmi_claim_cost_per_head,600.0,£/employee/year,"PMI industry proxy — ASSUMPTION, refine",assumption
