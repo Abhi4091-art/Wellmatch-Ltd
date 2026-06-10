@@ -43,4 +43,5 @@ ReplacementMultiplier,literature
 Cost_AttritionIfLeaves,derived_IBM_x_literature
 DailyWage,derived_from_IBM
 Cost_AbsenceAnnual,derived_IBM_x_ONS
+Cost_AbsenceWellbeingAddressable,derived_IBM_x_ONS
 Cost_PMIproxy,industry_benchmark

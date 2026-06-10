@@ -5,8 +5,11 @@ replacement_multiplier_L3,1.0,x annual salary,SHRM / Oxford Economics 2014,liter
 replacement_multiplier_L4,1.5,x annual salary,SHRM / Oxford Economics 2014,literature
 replacement_multiplier_L5,2.0,x annual salary,SHRM / Oxford Economics 2014,literature
 uk_working_days_per_year,226.0,days,ONS standard working year,ONS
-uk_absence_days_per_worker,4.4,days/year,ONS Sickness Absence 2025 Table 3 — VERIFY FROM NB03,ONS
-uk_mh_share_of_absence,0.08,proportion,ONS Table 4a mental-health reason — VERIFY FROM NB03,ONS
+uk_absence_days_ons,4.4,days/year,"ONS Sickness Absence 2025 Table 3 (LFS self-report, conservative base)",ONS
+uk_absence_days_cipd,9.4,days/year,"CIPD Health & Wellbeing at Work 2025 (employer survey, upper/sensitivity)",CIPD
+uk_mh_share_of_absence,0.115,proportion,ONS Table 4a 2025 — Mental health conditions,ONS
+uk_msk_share_of_absence,0.183,proportion,ONS Table 4a 2025 — Musculoskeletal problems,ONS
+uk_wellbeing_addressable_share,0.298,proportion,MH (11.5%) + MSK (18.3%); ONS reasons are mutually exclusive so additive (no double-count). Comorbidity handled at savings stage in NB08,ONS_derived
 us_absence_rate_pct,3.2,% of days,BLS CPS 2024 (NB04),BLS
 us_working_days_per_year,240.0,days,NB04,BLS
 wellbeing_roi_ratio,4.7,£ per £1,Deloitte 2024 UK Mental Health,literature
