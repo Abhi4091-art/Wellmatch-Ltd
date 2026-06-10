@@ -14,4 +14,4 @@ proactive_roi_ratio,4.2,£ per £1,Deloitte 2024 (preventative),literature
 uk_employer_mh_cost_total,51000000000.0,£/year,Deloitte 2024 (£51bn),literature
 uk_mh_absence_cost,7300000000.0,£/year,Deloitte 2024,literature
 uk_mh_turnover_cost,19500000000.0,£/year,Deloitte 2024,literature
-pmi_claim_cost_per_head,600.0,£/employee/year,"PMI industry proxy — ASSUMPTION, refine",assumption
+pmi_claim_cost_per_head,600.0,£/employee/year,"Conservative low-end of UK PMI £500-1,500/head range (AXA / industry 2025-26); to be validated with AXA",industry_benchmark
