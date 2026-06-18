@@ -1,0 +1,4 @@
+Model,ROC_AUC,Recall,Precision,F1,Leavers_Caught,False_Alarms
+Logistic Regression,0.8226,0.34,0.62,0.44,16/47,10
+XGBoost (tuned),0.7786,0.4,0.53,0.46,19/47,17
+TabICL,0.839,0.45,0.75,0.56,21/47,7
