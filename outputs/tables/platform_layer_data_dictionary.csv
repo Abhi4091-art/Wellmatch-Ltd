@@ -1,0 +1,12 @@
+field,type,description,values_range,generation_logic,source
+EmployeeNumber,int,Links to HR record,-,from IBM,IBM_synthetic_benchmark
+platform_enrolled,binary,Employer gave access,0/1,~85% enrolled,synthetic_generated
+engaged,binary,Actively used in period,0/1,"~40% of enrolled, independent of risk",synthetic_generated
+sessions_q,int,Sessions booked last quarter,0-~30,engaged: Poisson(6),synthetic_generated
+engagement_tier,categorical,Intensity band,None/Low/Medium/High,derived from sessions_q,synthetic_generated
+primary_category,categorical,Most-used area,MH/Fitness/Nutrition/Sleep/Financial,sampled from fixed mix,synthetic_generated
+categories_used,int,Breadth of use,0-5,engaged: 1-3,synthetic_generated
+tenure_on_platform_m,int,Months since first use,0-24,uniform among engaged,synthetic_generated
+dropped_off,binary,Churned from platform,0/1,~20% of engaged,synthetic_generated
+self_reported_wellbeing,int,Optional self-report,1-5,"engaged only, mild noise",synthetic_generated
+data_source,text,Provenance flag,synthetic_generated,constant,synthetic_generated

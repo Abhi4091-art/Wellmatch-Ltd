@@ -1,0 +1,4 @@
+Scenario,Total_benefit_£,ROI_at_£60,Breakeven_£/head
+Low (conservative),357960,4.8,289
+Base,562182,7.6,453
+High (optimistic),934962,12.6,754
